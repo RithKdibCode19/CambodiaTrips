@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --nav-bar-color: #325d32;
+    --boder-radius: 10px;
+    --main-font: "Outfit";
+  }
+  .nav-section {
+    width: 100%;
+    height: 50px;
+    background-color: var(--nav-bar-color);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-section .nav-menu {
+    width: 35%;
+    height: 100%;
+    font-family: var(--main-font);
+  }
+  .nav-menu .menu {
+    list-style: none;
+    display: flex;
+  }
+  .nav-menu .menu li {
+    position: relative;
+    padding: 15px;
+  }
+  .nav-menu .menu li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+  }
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 150px;
+    margin-left: -20px;
+    display: none;
+    background-color: var(--nav-bar-color);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .dropdown li {
+    display: block;
+    margin: 0;
+    text-align: left;
+  }
+  .menu li:hover .dropdown {
+    display: block;
+  }
+  .nav-section .nav-mode {
+    width: 7.5%;
+    height: 70%;
+    background-color: black;
+    opacity: 0.4;
+    margin-right: 20px;
+    border-radius: var(--boder-radius);
+    margin-top: 8px;
+    color: white;
+    font-family: var(--main-font);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-mode:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  .logo-search-container {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.584);
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .logo-search-container .account-manager {
+    width: 9%;
+    height: 70%;
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .account-manager:hover {
+    cursor: pointer;
+  }
+  .logo-search-container h2 {
+    color: var(--nav-bar-color);
+    margin-left: 35px;
+  }
+  .logo-search-container h2:hover {
+    cursor: pointer;
+  }
+  .input-container {
+    width: 20%;
+    height: 40%;
+    position: relative;
+  }
+  .input-container :last-child {
+    position: absolute;
+    right: 2%;
+    top: 24%;
+  }
+  .logo-search-container input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: var(--boder-radius);
+    background-color: #d8d8dac7;
+    padding-left: 10px;
+  }
+  .hero-container {
+    width: 98%;
+    height: 75vh;
+    background-color: #000;
+    margin: 20px auto;
+    border-radius: var(--boder-radius);
+    position: relative;
+    overflow: hidden; /* for hide overflow element */
+  }
+  .hero-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("/images/Hero-Images-Angkor.png");
+    opacity: 0.2;
+    top: 0%;
+  }
+  .hero-container .hero-txt-container {
+    font-family: var(--main-font);
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+  }
+  .hero-txt-container :first-child {
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+  }
+  .hero-txt-container :nth-child(2) {
+    line-height: 30px;
+    color: aqua;
+    margin: 20px 0px;
+  }
+  .btn-explore {
+    width: 120px;
+    height: 35px;
+    border-radius: var(--boder-radius);
+    border: none;
+    transition: 0.2s;
+  }
+  .btn-explore:hover {
+    transition: 0.2s;
+    background-color: aqua;
+    color: white;
+  }
+  .hero-container .hero-thumnail-container {
+    display: flex;
+    width: 55%;
+    height: 60%;
+    position: absolute;
+    right: 2%;
+    top: 16%;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+    padding: 10px 0px;
+  }
+  .hero-thumnail-container > img {
+    border-radius: var(--boder-radius);
+    transition: 0.3s;
+  }
+  .hero-thumnail-container > img:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+  }
+  .card h3 {
+      text-align: end;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 30px 0px;
+  }
+  .card{
+    width: 60%;
+    height: 70vh;
+  }
+  
