@@ -187,14 +187,236 @@
     transition: 0.3s;
     transform: scale(1.03);
   }
-  .card h3 {
-      text-align: end;
-    font-size: 30px;
-    font-weight: 300;
-    padding: 30px 0px;
-  }
-  .card{
-    width: 60%;
-    height: 70vh;
-  }
+  .special{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: var(--main-font);
+}
+.place-food{
+    width: 100%;
+    height: 300px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.place-food > img{
+    border-radius: var(--boder-radius);
+    transition: 0.3;
+}
+.place{
+  display: flex;
+  width: 75%;
+  height: 20vh;
+  justify-content: center;
+}
+.text-place{
+  width: 49%;
+  height: 100px;
+  position: relative;
+  left:12%;
+  padding: 20px 10px;
+
+}
+.text-place i{
+  width: 35px;
+  height: 35px;
+  background-color: rgb(217, 207, 207);
+  padding: 10px 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 100%;
+  top: 15%;
+}
+.text-place p{
+  margin: 10px 0px;
+}
+.text-place1{
+  width: 49%;
+  height: 100px;
+  position: relative;
+  left: 18%;
+  padding: 20px 10px;
+
+}
+.text-place1 i{
+  width: 35px;
+  height: 35px;
+  background-color: rgb(217, 207, 207);
+  padding: 10px 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 100%;
+  top: 15%;
+  overflow: hidden;
+}
+.trending{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: var(--main-font);
+  transition: 0.3;
+}
+.trend{
+  font-family: var(--main-font);
+  font-weight: 100;
+  margin-top: 20px auto;
+  width: 75%;
+  height: 40vh;
+  margin: 20px auto;
+  color: rgb(41, 162, 228);
+}
+.trend .p{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  font-size: 20px;
+  margin: 20px auto;
+  transition: 0.3;
+}
+.p .op1{
+  width: 40px;
+  border-radius: var(--boder-radius);
+  border: 1px solid rgb(41, 162, 228);
+  text-align: center;
+}
+.p .op2{
+  width: 70px;
+  border-radius: var(--boder-radius);
+  border: 1px solid rgb(41, 162, 228);
+  text-align: center;
+}
+.p .op3{
+  width: 60px;
+  border-radius: var(--boder-radius);
+  border: 1px solid rgb(41, 162, 228);
+  text-align: center;
+}
+.p .op4{
+  width: 90px;
+  border-radius: var(--boder-radius);
+  border: 1px solid rgb(41, 162, 228);
+  text-align: center;
+}
+.trend .card{
+  width: 100%;
+  height: 300px;
+    border-radius: var(--boder-radius);
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+   
+}
+.card >img{
+  border-radius: var(--boder-radius);
+  transition: 0.3;
+}
+.trending1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: var(--main-font);
+  transition: 0.3;
+  margin: 80px auto;
+}
+.trend1{
+  font-family: var(--main-font);
+  font-weight: 100;
+  margin-top: 20px auto;
+  width: 75%;
+  height: 40vh;
+  margin: 20px auto;
+}
+.trend1 .card1{
+  width: 100%;
+  height: 300px;
+    border-radius: var(--boder-radius);
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.card1 >img{
+  transition: 0.3;
+  border-radius: var(--boder-radius);
+}
+.trend1 .btn-see{
+  width: 8%;
+  display: flex;
+  padding: 5px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--boder-radius);
+  border: 1px solid rgb(41, 162, 228);
+  margin: 20px auto;
+  transition: 0.3;
+}
+.btn-see i{
+  width: 5%;
+  height: 20px;
+  padding-left: 10px;
+  
+}
+.trending2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: var(--main-font);
+  transition: 0.3;
+  margin: 60px auto;
+}
+.trend2{
+  font-family: var(--main-font);
+  font-weight: 100;
+  margin-top: 20px auto;
+  width: 75%;
+  height: 40vh;
+  margin: 20px auto;
+}
+.trend2 .card2{
+  width: 100%;
+  height: 300px;
+    border-radius: var(--boder-radius);
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.card2 >img{
+  transition: 0.3;
+  border-radius: var(--boder-radius);
+}
+.trend2 .btn-see1{
+  width: 8%;
+  display: flex;
+  padding: 5px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--boder-radius);
+  border: 1px solid rgb(41, 162, 228);
+  margin: 20px auto;
+  transition: 0.3;
+}
+.btn-see1 i{
+  width: 5%;
+  height: 20px;
+  padding-left: 10px;
+  
+}
+.footer{
+  width: 98%;
+  height: 20vh;
+  background-color: aqua;
+  border-radius: var(--boder-radius);
+  margin: 20px auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+
   
