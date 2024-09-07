@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 70%;
+    height: 80vh;
+    margin: 20px auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 10px;
+}
+.content-box{
+    background-color: red;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Oswald:wght@200..700&display=swap');
+.container{
+    border: 2px solid blue;
+    width: 40%;
+    height: 300px;
+    margin: 20px auto;
+}
+.txt{
+    font-weight: 10px;  
+    /* font-family: "Fasthand",cursive; */
+    font-family: "Oswald",sans-serif;
+    font-size: 20px;
+    /* text-decoration:line-through; */
+    /* line-height: 40px; */
+    /* letter-spacing: 10px;
+    word-spacing: 10px; */
+    text-indent: 15px; /*start line*/
+    text-align: justify;
+    text-shadow: 5px 5px 10px aqua;/*updown rightleft weight color*/
+    padding: 0px 10px;
+}
+.image-container{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    background-image: url(/file/bird.jpg);
+    background-position: center;
+    color: white;
+    opacity: 50%;
+}
+
