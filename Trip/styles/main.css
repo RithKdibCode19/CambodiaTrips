@@ -39,8 +39,8 @@
     top: 100%;
     width: 150px;
     margin-left: -20px;
-    display: none;
     background-color: var(--nav-bar-color);
+    display: none;
     opacity: 0.5;
     z-index: 1;
   }
@@ -196,16 +196,18 @@
 .place-food{
     width: 100%;
     height: 300px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     gap: 50px;
-    overflow: hidden;
     margin-top: 30px;
 }
 .place-food > img{
     border-radius: var(--boder-radius);
     transition: 0.3;
+}.place-food >img:hover{
+  cursor: pointer;
+  transition: 0.3s;
+    transform: scale(1.03);
 }
 .place{
   display: flex;
@@ -231,6 +233,11 @@
   left: 100%;
   top: 15%;
 }
+.text-place i:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border: none;
+}
 .text-place p{
   margin: 10px 0px;
 }
@@ -252,6 +259,11 @@
   left: 100%;
   top: 15%;
   overflow: hidden;
+}
+.text-place1 i:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border: none;
 }
 .trending{
   text-align: center;
@@ -285,11 +297,21 @@
   border: 1px solid rgb(41, 162, 228);
   text-align: center;
 }
+.op1:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border: none;
+}
 .p .op2{
   width: 70px;
   border-radius: var(--boder-radius);
   border: 1px solid rgb(41, 162, 228);
   text-align: center;
+}
+.op2:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border: none;
 }
 .p .op3{
   width: 60px;
@@ -297,11 +319,21 @@
   border: 1px solid rgb(41, 162, 228);
   text-align: center;
 }
+.op3:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border: none;
+}
 .p .op4{
   width: 90px;
   border-radius: var(--boder-radius);
   border: 1px solid rgb(41, 162, 228);
   text-align: center;
+}
+.op4:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+  border: none;
 }
 .trend .card{
   width: 100%;
@@ -315,6 +347,11 @@
 .card >img{
   border-radius: var(--boder-radius);
   transition: 0.3;
+}
+.card >img:hover{
+  cursor: pointer;
+  transition: 0.3s;
+    transform: scale(1.03);
 }
 .trending1{
   text-align: center;
@@ -344,6 +381,11 @@
   transition: 0.3;
   border-radius: var(--boder-radius);
 }
+.card1 >img:hover{
+  cursor: pointer;
+  transition: 0.3s;
+    transform: scale(1.03);
+}
 .trend1 .btn-see{
   width: 8%;
   display: flex;
@@ -360,6 +402,11 @@
   height: 20px;
   padding-left: 10px;
   
+}
+.btn-see:hover{
+  background-color: aqua;
+  cursor: pointer;
+  border: none;
 }
 .trending2{
   text-align: center;
@@ -389,6 +436,11 @@
   transition: 0.3;
   border-radius: var(--boder-radius);
 }
+.card2 >img:hover{
+  cursor: pointer;
+  transition: 0.3s;
+    transform: scale(1.03);
+}
 .trend2 .btn-see1{
   width: 8%;
   display: flex;
@@ -406,17 +458,74 @@
   padding-left: 10px;
   
 }
-.footer{
-  width: 98%;
-  height: 20vh;
+.btn-see1:hover{
   background-color: aqua;
+  cursor: pointer;
+  border: none;
+}
+.footer{
+  width: 80%;
+  height: 20vh;
+  background-color: rgb(66, 183, 230);
   border-radius: var(--boder-radius);
   margin: 20px auto;
   margin-bottom: 0;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   padding: 10px 20px;
+  font-family: var(--main-font);
+  color: white;
+  font-size: 25px;
 }
+.footer .l{
+  width: 30%;
+  height: 100%;
+  position: relative;
+ left: 2%;
+}
+.l >p{
+  color: white;
+  padding-left: 30px;
+}
+.l .circle{
+  position: absolute;
+  background-color: rgb(242, 236, 236);
+  margin-top:25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.footer .d{
+  width: 30%;
+  height: 100%;
+}
+.d >p{
+  padding-bottom: 30px;
+  padding-left: 30%;
+}
+.footer .s{
+  width: 30%;
+  text-align: center;
+}
+.s .m{
+  display: flex;
+  justify-content: space-around;
+
+}
+.s .circle{
+  background-color: rgb(242, 236, 236);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-top:25px;
+  margin-bottom: 30px;
+}
+
 
 
   
