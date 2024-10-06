@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Hanuman" ;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-container{
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+}
+.navbar-menu li{
+    padding: 28px 20px;
+}
+.navbar-menu li a{
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    color: white;
+}
+.navbar-menu li a::before,a::after{
+    content: "";
+    width: 50%;
+    height: 4px;
+    position: absolute;
+}
+.navbar-menu li a::before{
+    transition: 0.4s;
+    transform: scaleX(0);
+    background-color: brown;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+.navbar-menu li a::after{
+    bottom: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.4s;
+    background-color: gray;
+}
+.navbar-menu li:hover a::before,
+.navbar-menu li:hover a::after{
+    transform: scaleX(100%);
+    transition: 0.4s;
+}
+.hero-container{
+    height: 100vh;
+    position: relative;
+}
+.hero-container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url(/Project/images/gasolin-image.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.hero-container .hero-text{
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    
+}
+.hero-text h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 90px;
+    color: white;
+}
+.span{
+    width: 5px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: white;
+}
+button{
+    width: 160px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.btn-readmore{
+    transition: 0.4s;
+}
+.btn-readmore:hover{
+    transition: 0.4s;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+.btn-author {
+    
+    transition: 0.4s;
+    color: white;
+    background-color: grey;
+}
+.btn-author:hover{
+    transition: 0.4s;
+    background-color: red;
+}
+.Logo{
+    width: 120px;
+}
+.ads-container{
+    height: 400px;
+}
+.tranding-new{
+    height: 300px;
+    margin-top: 5%;
+}
+.card-box{
+    height: 100%;
+}
+.label{
+    width: fit-content;
+    height: 30px;
+    background-color: rgb(213, 217, 213);
+}
+.label:hover p{
+    color: red;
+    cursor: pointer;
+}
+.text-desc:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.text-desc{
+    height: 100px;
+}
+.card-image{
+    transition: 0.4s;
+}
+.card-container:hover .card-image{
+    transform: scale(1.04);
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) and (max-width: 767px) { 
+    .Logo{
+        width: 100px;
+        margin-left: 70px;
+    }
+    .bar{
+        margin-left: 95%;
+        font-size: 20px;
+        margin-top: 30px;
+        color: white;
+    }
+    .hero-text h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hero-text{
+        width: 100% !important;
+    }
+    .ads-container img{
+        width: 90%;
+    }
+    .tran{
+        height: 100px;
+    }
+    .card-box{
+        height: 25%;
+        height: fit-content;
+        padding: 5px 100px;
+    }
+    .text-desc{
+        height: 50px;
+    } 
+    .ads-container{
+        height: auto;
+    }   
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+    .Logo{
+        width: 100px;
+        margin-left: 50px;
+    }
+    .bar{
+        margin-left: 95%;
+        font-size: 20px;
+        margin-top: 30px;
+        color: white;
+    }
+    .hero-text h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hero-text{
+        width: 100% !important;
+    }
+    .text-desc{
+        height: 50px;
+    } 
+    .ads-container{
+        height: auto;
+    } 
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .Logo{
+        width: 100px;
+        margin-left: 50px;
+    }
+    .bar{
+        margin-left: 98%;
+        font-size: 20px;
+        margin-top: 30px;
+        color: white;
+    }
+    .hero-text h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hero-text{
+        width: 80% !important;
+    }
+     
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){ 
+
+ }
